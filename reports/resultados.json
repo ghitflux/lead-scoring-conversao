@@ -1,0 +1,251 @@
+{
+  "dados": {
+    "leads": 41188,
+    "taxa_de_conversao": 0.11265417111780131,
+    "periodo": "2008-05 a 2010-11"
+  },
+  "vazamento_auc": {
+    "com duration": 0.8782849632321029,
+    "sem duration": 0.6922239807216207
+  },
+  "aleatoria_x_temporal": {
+    "LightGBM, todas as variáveis": {
+      "AUC validação aleatória": 0.804414586,
+      "AUC no tempo (média dos blocos)": 0.6340470325,
+      "pior bloco": 0.5686603509,
+      "melhor bloco": 0.7320580566
+    },
+    "Logística, 6 variáveis": {
+      "AUC validação aleatória": 0.6922239807,
+      "AUC no tempo (média dos blocos)": 0.6587548279,
+      "pior bloco": 0.5931193759,
+      "melhor bloco": 0.7636032396
+    }
+  },
+  "teto_regime_novo_auc": 0.7042011766745347,
+  "auc_por_bloco": {
+    "LightGBM, todas as variáveis": {
+      "2009-04 a 2009-05": 0.5686603509154798,
+      "2009-06 a 2009-08": 0.5747654278991978,
+      "2009-09 a 2009-12": 0.619174768780498,
+      "2010-03 a 2010-06": 0.675576558166691,
+      "2010-07 a 2010-11": 0.7320580566060543
+    },
+    "Logística, 6 variáveis": {
+      "2009-04 a 2009-05": 0.6058479377620315,
+      "2009-06 a 2009-08": 0.5931193758602552,
+      "2009-09 a 2009-12": 0.6280945512736155,
+      "2010-03 a 2010-06": 0.7031090351773464,
+      "2010-07 a 2010-11": 0.7636032395655252
+    },
+    "Regra de bolso (sem modelo)": {
+      "2009-04 a 2009-05": 0.4956480820018993,
+      "2009-06 a 2009-08": 0.5617493929000009,
+      "2009-09 a 2009-12": 0.6244321501702892,
+      "2010-03 a 2010-06": 0.6357883103613654,
+      "2010-07 a 2010-11": 0.6834372319789095
+    }
+  },
+  "concorrentes": {
+    "Logística, 6 variáveis": {
+      "AUC no tempo": 0.6587548279,
+      "IC 95% inferior": 0.6457408092,
+      "IC 95% superior": 0.6723995284
+    },
+    "LightGBM, todas as variáveis": {
+      "AUC no tempo": 0.6340470325,
+      "IC 95% inferior": 0.6218567844,
+      "IC 95% superior": 0.6479442593
+    },
+    "Regra de bolso (sem modelo)": {
+      "AUC no tempo": 0.6002110335,
+      "IC 95% inferior": 0.5878978105,
+      "IC 95% superior": 0.6132778304
+    }
+  },
+  "diferencas": {
+    "Logística, 6 variáveis − LightGBM, todas as variáveis": {
+      "diferença de AUC": 0.0247077955,
+      "IC 95% inferior": 0.0134574609,
+      "IC 95% superior": 0.0345035515
+    },
+    "Logística, 6 variáveis − Regra de bolso (sem modelo)": {
+      "diferença de AUC": 0.0585437944,
+      "IC 95% inferior": 0.0445402376,
+      "IC 95% superior": 0.0718691889
+    }
+  },
+  "calibracao": {
+    "2009-04 a 2009-05": {
+      "leads": 8252,
+      "taxa no treino": 0.0523738024,
+      "taxa recente": 0.1115,
+      "taxa real": 0.1170625303,
+      "conversões reais": 966,
+      "previstas (cru)": 506.4805364278,
+      "previstas (corrigido)": 1058.4997506785,
+      "erro (cru)": -0.4756930265,
+      "erro (corrigido)": 0.0957554355,
+      "Brier (cru)": 0.1048966003,
+      "Brier (corrigido)": 0.1013700424
+    },
+    "2009-06 a 2009-08": {
+      "leads": 1663,
+      "taxa no treino": 0.0769825375,
+      "taxa recente": 0.116,
+      "taxa real": 0.3571858088,
+      "conversões reais": 594,
+      "previstas (cru)": 196.4110215665,
+      "previstas (corrigido)": 278.5892011475,
+      "erro (cru)": -0.6693417145,
+      "erro (corrigido)": -0.5309946109,
+      "Brier (cru)": 0.2790919343,
+      "Brier (corrigido)": 0.2588241976
+    },
+    "2009-09 a 2009-12": {
+      "leads": 1243,
+      "taxa no treino": 0.1381569474,
+      "taxa recente": 0.331,
+      "taxa real": 0.4360418343,
+      "conversões reais": 542,
+      "previstas (cru)": 258.1457633343,
+      "previstas (corrigido)": 508.0270227895,
+      "erro (cru)": -0.5237163038,
+      "erro (corrigido)": -0.0626807698,
+      "Brier (cru)": 0.2777219424,
+      "Brier (corrigido)": 0.2289868369
+    },
+    "2010-03 a 2010-06": {
+      "leads": 879,
+      "taxa no treino": 0.1947552448,
+      "taxa recente": 0.4,
+      "taxa real": 0.5415244596,
+      "conversões reais": 476,
+      "previstas (cru)": 275.2690042646,
+      "previstas (corrigido)": 443.8861035871,
+      "erro (cru)": -0.4217037726,
+      "erro (corrigido)": -0.0674661689,
+      "Brier (cru)": 0.2743298177,
+      "Brier (corrigido)": 0.2234353069
+    },
+    "2010-07 a 2010-11": {
+      "leads": 1179,
+      "taxa no treino": 0.4390879479,
+      "taxa recente": 0.486,
+      "taxa real": 0.5063613232,
+      "conversões reais": 597,
+      "previstas (cru)": 548.2828493221,
+      "previstas (corrigido)": 597.6524697366,
+      "erro (cru)": -0.0816032675,
+      "erro (corrigido)": 0.0010929141,
+      "Brier (cru)": 0.2089624225,
+      "Brier (corrigido)": 0.2071040716
+    }
+  },
+  "capacidade": {
+    "0.1": {
+      "ligações": 1321,
+      "sem priorizar": 317.3434077793,
+      "regra de bolso": 476.4298697314,
+      "modelo": 561.5,
+      "modelo vs sem priorizar": 0.7693766003,
+      "modelo vs regra": 0.178557508
+    },
+    "0.2": {
+      "ligações": 2644,
+      "sem priorizar": 635.4800432017,
+      "regra de bolso": 850.0522220798,
+      "modelo": 1011.980952381,
+      "modelo vs sem priorizar": 0.5924669283,
+      "modelo vs regra": 0.1904926851
+    },
+    "0.3": {
+      "ligações": 3966,
+      "sem priorizar": 952.9405135113,
+      "regra de bolso": 1161.892252816,
+      "modelo": 1360.818006993,
+      "modelo vs sem priorizar": 0.4280198897,
+      "modelo vs regra": 0.1712084349
+    },
+    "0.5": {
+      "ligações": 6610,
+      "sem priorizar": 1588.4205567129,
+      "regra de bolso": 1731.3233301468,
+      "modelo": 1954.3814102564,
+      "modelo vs sem priorizar": 0.2303929221,
+      "modelo vs regra": 0.1288367552
+    }
+  },
+  "grade_top10": [
+    {
+      "variáveis": "enxuto (6 variáveis)",
+      "modelo": "logistica",
+      "janela de treino": "12 meses",
+      "AUC no tempo": 0.6587548279,
+      "pior bloco": 0.5931193759
+    },
+    {
+      "variáveis": "enxuto (6 variáveis)",
+      "modelo": "logistica",
+      "janela de treino": "6 meses",
+      "AUC no tempo": 0.6536031668,
+      "pior bloco": 0.5820703134
+    },
+    {
+      "variáveis": "perfil + contato",
+      "modelo": "logistica",
+      "janela de treino": "12 meses",
+      "AUC no tempo": 0.6486067767,
+      "pior bloco": 0.5807490244
+    },
+    {
+      "variáveis": "enxuto (6 variáveis)",
+      "modelo": "logistica",
+      "janela de treino": "todo o passado",
+      "AUC no tempo": 0.6456506502,
+      "pior bloco": 0.5955737607
+    },
+    {
+      "variáveis": "tudo (inclui macro)",
+      "modelo": "lightgbm",
+      "janela de treino": "todo o passado",
+      "AUC no tempo": 0.644176684,
+      "pior bloco": 0.5686603509
+    },
+    {
+      "variáveis": "perfil + contato + calendário",
+      "modelo": "logistica",
+      "janela de treino": "6 meses",
+      "AUC no tempo": 0.6437765009,
+      "pior bloco": 0.5774694245
+    },
+    {
+      "variáveis": "enxuto (6 variáveis)",
+      "modelo": "lightgbm",
+      "janela de treino": "6 meses",
+      "AUC no tempo": 0.6431515738,
+      "pior bloco": 0.5838900385
+    },
+    {
+      "variáveis": "perfil + contato",
+      "modelo": "logistica",
+      "janela de treino": "6 meses",
+      "AUC no tempo": 0.6430415386,
+      "pior bloco": 0.5759284457
+    },
+    {
+      "variáveis": "perfil + contato",
+      "modelo": "logistica",
+      "janela de treino": "todo o passado",
+      "AUC no tempo": 0.6384777813,
+      "pior bloco": 0.5859381152
+    },
+    {
+      "variáveis": "enxuto (6 variáveis)",
+      "modelo": "lightgbm",
+      "janela de treino": "12 meses",
+      "AUC no tempo": 0.6347967395,
+      "pior bloco": 0.5758560031
+    }
+  ]
+}
