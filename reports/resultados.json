@@ -176,6 +176,134 @@
       "modelo vs regra": 0.1288367552
     }
   },
+  "curva_de_ganho": [
+    {
+      "fração dos leads contatada": 0.0,
+      "sem priorizar": 0.0,
+      "regra de bolso": 0.0,
+      "modelo": 0.0
+    },
+    {
+      "fração dos leads contatada": 0.05,
+      "sem priorizar": 0.05,
+      "regra de bolso": 0.0858,
+      "modelo": 0.0974
+    },
+    {
+      "fração dos leads contatada": 0.1,
+      "sem priorizar": 0.1,
+      "regra de bolso": 0.1501,
+      "modelo": 0.1769
+    },
+    {
+      "fração dos leads contatada": 0.15,
+      "sem priorizar": 0.15,
+      "regra de bolso": 0.2108,
+      "modelo": 0.2528
+    },
+    {
+      "fração dos leads contatada": 0.2,
+      "sem priorizar": 0.2,
+      "regra de bolso": 0.2677,
+      "modelo": 0.3187
+    },
+    {
+      "fração dos leads contatada": 0.25,
+      "sem priorizar": 0.25,
+      "regra de bolso": 0.3186,
+      "modelo": 0.3737
+    },
+    {
+      "fração dos leads contatada": 0.3,
+      "sem priorizar": 0.3,
+      "regra de bolso": 0.366,
+      "modelo": 0.4286
+    },
+    {
+      "fração dos leads contatada": 0.35,
+      "sem priorizar": 0.35,
+      "regra de bolso": 0.4105,
+      "modelo": 0.4769
+    },
+    {
+      "fração dos leads contatada": 0.4,
+      "sem priorizar": 0.4,
+      "regra de bolso": 0.4556,
+      "modelo": 0.5258
+    },
+    {
+      "fração dos leads contatada": 0.45,
+      "sem priorizar": 0.45,
+      "regra de bolso": 0.4999,
+      "modelo": 0.5723
+    },
+    {
+      "fração dos leads contatada": 0.5,
+      "sem priorizar": 0.5,
+      "regra de bolso": 0.5453,
+      "modelo": 0.6156
+    },
+    {
+      "fração dos leads contatada": 0.55,
+      "sem priorizar": 0.55,
+      "regra de bolso": 0.5901,
+      "modelo": 0.6599
+    },
+    {
+      "fração dos leads contatada": 0.6,
+      "sem priorizar": 0.6,
+      "regra de bolso": 0.6336,
+      "modelo": 0.7132
+    },
+    {
+      "fração dos leads contatada": 0.65,
+      "sem priorizar": 0.65,
+      "regra de bolso": 0.685,
+      "modelo": 0.7637
+    },
+    {
+      "fração dos leads contatada": 0.7,
+      "sem priorizar": 0.7,
+      "regra de bolso": 0.7363,
+      "modelo": 0.803
+    },
+    {
+      "fração dos leads contatada": 0.75,
+      "sem priorizar": 0.75,
+      "regra de bolso": 0.7877,
+      "modelo": 0.8368
+    },
+    {
+      "fração dos leads contatada": 0.8,
+      "sem priorizar": 0.8,
+      "regra de bolso": 0.839,
+      "modelo": 0.8641
+    },
+    {
+      "fração dos leads contatada": 0.85,
+      "sem priorizar": 0.85,
+      "regra de bolso": 0.8906,
+      "modelo": 0.9055
+    },
+    {
+      "fração dos leads contatada": 0.9,
+      "sem priorizar": 0.9,
+      "regra de bolso": 0.9377,
+      "modelo": 0.9403
+    },
+    {
+      "fração dos leads contatada": 0.95,
+      "sem priorizar": 0.95,
+      "regra de bolso": 0.9726,
+      "modelo": 0.9717
+    },
+    {
+      "fração dos leads contatada": 1.0,
+      "sem priorizar": 1.0,
+      "regra de bolso": 1.0,
+      "modelo": 1.0
+    }
+  ],
   "grade_top10": [
     {
       "variáveis": "enxuto (6 variáveis)",

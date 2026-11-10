@@ -73,6 +73,7 @@ def main() -> None:
         "diferencas": _para_json(diferencas),
         "calibracao": _para_json(calibracao),
         "capacidade": _para_json(capacidade),
+        "curva_de_ganho": json.loads(curva.reset_index().round(4).to_json(orient="records", force_ascii=False)),
         "grade_top10": json.loads(grade.head(10).to_json(orient="records", force_ascii=False)),
     }
     (SAIDA / "resultados.json").write_text(json.dumps(resultados, indent=2, ensure_ascii=False), encoding="utf-8")
