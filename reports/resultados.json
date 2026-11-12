@@ -375,5 +375,584 @@
       "AUC no tempo": 0.6347967395,
       "pior bloco": 0.5758560031
     }
-  ]
+  ],
+  "para_o_site": {
+    "graficos_extras": [
+      {
+        "tipo": "barras",
+        "titulo": {
+          "pt": "O mesmo modelo marca AUC 0,80 na validação aleatória e 0,63 no tempo",
+          "en": "The same model scores AUC 0.80 on random validation and 0.63 over time",
+          "es": "El mismo modelo marca AUC 0,80 en validación aleatoria y 0,63 en el tiempo"
+        },
+        "leitura": {
+          "pt": "Os indicadores macroeconômicos funcionam como carimbo de data: com as linhas embaralhadas, o modelo reconhece o período e parece ótimo. Treinado no passado e testado no futuro, ele cai. O teto no regime recente é 0,70.",
+          "en": "The macroeconomic indicators act as a timestamp: with shuffled rows, the model recognizes the period and looks great. Trained on the past and tested on the future, it drops. The ceiling within the recent regime is 0.70.",
+          "es": "Los indicadores macroeconómicos funcionan como sello de fecha: con las filas mezcladas, el modelo reconoce el período y parece excelente. Entrenado en el pasado y probado en el futuro, cae. El techo en el régimen reciente es 0,70."
+        },
+        "eixo_x": {
+          "pt": "Modelo",
+          "en": "Model",
+          "es": "Modelo"
+        },
+        "eixo_y": {
+          "pt": "AUC",
+          "en": "AUC",
+          "es": "AUC"
+        },
+        "formato_x": "numero",
+        "formato_y": "numero",
+        "series": [
+          {
+            "nome": {
+              "pt": "Validação aleatória",
+              "en": "Random validation",
+              "es": "Validación aleatoria"
+            },
+            "papel": "base",
+            "pontos": [
+              [
+                "LightGBM, todas as variáveis",
+                0.8044
+              ],
+              [
+                "Logística, 6 variáveis",
+                0.6922
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "LightGBM, todas as variáveis",
+                "Logística, 6 variáveis"
+              ],
+              "en": [
+                "LightGBM, all features",
+                "Logistic, 6 features"
+              ],
+              "es": [
+                "LightGBM, todas las variables",
+                "Logística, 6 variables"
+              ]
+            }
+          },
+          {
+            "nome": {
+              "pt": "No tempo (média dos blocos)",
+              "en": "Over time (mean of blocks)",
+              "es": "En el tiempo (media de los bloques)"
+            },
+            "papel": "principal",
+            "pontos": [
+              [
+                "LightGBM, todas as variáveis",
+                0.634
+              ],
+              [
+                "Logística, 6 variáveis",
+                0.6588
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "LightGBM, todas as variáveis",
+                "Logística, 6 variáveis"
+              ],
+              "en": [
+                "LightGBM, all features",
+                "Logistic, 6 features"
+              ],
+              "es": [
+                "LightGBM, todas las variables",
+                "Logística, 6 variables"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "tipo": "barras",
+        "titulo": {
+          "pt": "Simples não perde para complexo: 0,66 contra 0,63; a regra de bolso fica em 0,60",
+          "en": "Simple does not lose to complex: 0.66 vs 0.63; the rule of thumb gets 0.60",
+          "es": "Lo simple no pierde ante lo complejo: 0,66 frente a 0,63; la regla práctica, 0,60"
+        },
+        "leitura": {
+          "pt": "AUC em cada bloco de teste, pontuado por um modelo treinado só nos 12 meses anteriores. A logística supera a regra de bolso em 0,06 de AUC (IC 95% de 0,045 a 0,072); a leitura segura é que o modelo complexo não é melhor.",
+          "en": "AUC in each test block, scored by a model trained only on the previous 12 months. The logistic model beats the rule of thumb by 0.06 AUC (95% CI 0.045 to 0.072); the safe reading is that the complex model is not better.",
+          "es": "AUC en cada bloque de prueba, puntuado por un modelo entrenado solo con los 12 meses anteriores. La logística supera a la regla práctica en 0,06 de AUC (IC 95% de 0,045 a 0,072); la lectura segura es que el modelo complejo no es mejor."
+        },
+        "eixo_x": {
+          "pt": "Bloco de teste",
+          "en": "Test block",
+          "es": "Bloque de prueba"
+        },
+        "eixo_y": {
+          "pt": "AUC",
+          "en": "AUC",
+          "es": "AUC"
+        },
+        "formato_x": "numero",
+        "formato_y": "numero",
+        "series": [
+          {
+            "nome": {
+              "pt": "Logística, 6 variáveis",
+              "en": "Logistic, 6 features",
+              "es": "Logística, 6 variables"
+            },
+            "papel": "principal",
+            "pontos": [
+              [
+                "2009-04 a 2009-05",
+                0.6058
+              ],
+              [
+                "2009-06 a 2009-08",
+                0.5931
+              ],
+              [
+                "2009-09 a 2009-12",
+                0.6281
+              ],
+              [
+                "2010-03 a 2010-06",
+                0.7031
+              ],
+              [
+                "2010-07 a 2010-11",
+                0.7636
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "2009-04 a 2009-05",
+                "2009-06 a 2009-08",
+                "2009-09 a 2009-12",
+                "2010-03 a 2010-06",
+                "2010-07 a 2010-11"
+              ],
+              "en": [
+                "2009-04 to 2009-05",
+                "2009-06 to 2009-08",
+                "2009-09 to 2009-12",
+                "2010-03 to 2010-06",
+                "2010-07 to 2010-11"
+              ],
+              "es": [
+                "2009-04 a 2009-05",
+                "2009-06 a 2009-08",
+                "2009-09 a 2009-12",
+                "2010-03 a 2010-06",
+                "2010-07 a 2010-11"
+              ]
+            }
+          },
+          {
+            "nome": {
+              "pt": "LightGBM, todas as variáveis",
+              "en": "LightGBM, all features",
+              "es": "LightGBM, todas las variables"
+            },
+            "papel": "alternativa",
+            "pontos": [
+              [
+                "2009-04 a 2009-05",
+                0.5687
+              ],
+              [
+                "2009-06 a 2009-08",
+                0.5748
+              ],
+              [
+                "2009-09 a 2009-12",
+                0.6192
+              ],
+              [
+                "2010-03 a 2010-06",
+                0.6756
+              ],
+              [
+                "2010-07 a 2010-11",
+                0.7321
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "2009-04 a 2009-05",
+                "2009-06 a 2009-08",
+                "2009-09 a 2009-12",
+                "2010-03 a 2010-06",
+                "2010-07 a 2010-11"
+              ],
+              "en": [
+                "2009-04 to 2009-05",
+                "2009-06 to 2009-08",
+                "2009-09 to 2009-12",
+                "2010-03 to 2010-06",
+                "2010-07 to 2010-11"
+              ],
+              "es": [
+                "2009-04 a 2009-05",
+                "2009-06 a 2009-08",
+                "2009-09 a 2009-12",
+                "2010-03 a 2010-06",
+                "2010-07 a 2010-11"
+              ]
+            }
+          },
+          {
+            "nome": {
+              "pt": "Regra de bolso (sem modelo)",
+              "en": "Rule of thumb (no model)",
+              "es": "Regla práctica (sin modelo)"
+            },
+            "papel": "base",
+            "pontos": [
+              [
+                "2009-04 a 2009-05",
+                0.4956
+              ],
+              [
+                "2009-06 a 2009-08",
+                0.5617
+              ],
+              [
+                "2009-09 a 2009-12",
+                0.6244
+              ],
+              [
+                "2010-03 a 2010-06",
+                0.6358
+              ],
+              [
+                "2010-07 a 2010-11",
+                0.6834
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "2009-04 a 2009-05",
+                "2009-06 a 2009-08",
+                "2009-09 a 2009-12",
+                "2010-03 a 2010-06",
+                "2010-07 a 2010-11"
+              ],
+              "en": [
+                "2009-04 to 2009-05",
+                "2009-06 to 2009-08",
+                "2009-09 to 2009-12",
+                "2010-03 to 2010-06",
+                "2010-07 to 2010-11"
+              ],
+              "es": [
+                "2009-04 a 2009-05",
+                "2009-06 a 2009-08",
+                "2009-09 a 2009-12",
+                "2010-03 a 2010-06",
+                "2010-07 a 2010-11"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "tipo": "barras",
+        "titulo": {
+          "pt": "Contatando 30% dos leads, o modelo traz 43% mais conversões que sem priorizar",
+          "en": "Reaching 30% of leads, the model brings 43% more conversions than no prioritization",
+          "es": "Contactando el 30% de los leads, el modelo logra 43% más conversiones que sin priorizar"
+        },
+        "leitura": {
+          "pt": "Conversões somadas nos cinco blocos de teste (13.216 leads). Contra a regra de bolso, o ganho é de 17%: moderado, coerente com a AUC, e vale porque ordenar a fila custa quase nada.",
+          "en": "Conversions summed over the five test blocks (13,216 leads). Against the rule of thumb the gain is 17%: moderate, in line with the AUC, and worth it because ordering the queue costs almost nothing.",
+          "es": "Conversiones sumadas en los cinco bloques de prueba (13.216 leads). Frente a la regla práctica, la ganancia es del 17%: moderada, coherente con el AUC, y vale porque ordenar la cola casi no cuesta."
+        },
+        "eixo_x": {
+          "pt": "Capacidade da equipe",
+          "en": "Team capacity",
+          "es": "Capacidad del equipo"
+        },
+        "eixo_y": {
+          "pt": "Conversões captadas",
+          "en": "Conversions captured",
+          "es": "Conversiones captadas"
+        },
+        "formato_x": "numero",
+        "formato_y": "numero",
+        "series": [
+          {
+            "nome": {
+              "pt": "Sem priorizar",
+              "en": "No prioritization",
+              "es": "Sin priorizar"
+            },
+            "papel": "base",
+            "pontos": [
+              [
+                "10% dos leads",
+                317.3
+              ],
+              [
+                "20% dos leads",
+                635.5
+              ],
+              [
+                "30% dos leads",
+                952.9
+              ],
+              [
+                "50% dos leads",
+                1588.4
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "10% dos leads",
+                "20% dos leads",
+                "30% dos leads",
+                "50% dos leads"
+              ],
+              "en": [
+                "10% of leads",
+                "20% of leads",
+                "30% of leads",
+                "50% of leads"
+              ],
+              "es": [
+                "10% de los leads",
+                "20% de los leads",
+                "30% de los leads",
+                "50% de los leads"
+              ]
+            }
+          },
+          {
+            "nome": {
+              "pt": "Regra de bolso",
+              "en": "Rule of thumb",
+              "es": "Regla práctica"
+            },
+            "papel": "alternativa",
+            "pontos": [
+              [
+                "10% dos leads",
+                476.4
+              ],
+              [
+                "20% dos leads",
+                850.1
+              ],
+              [
+                "30% dos leads",
+                1161.9
+              ],
+              [
+                "50% dos leads",
+                1731.3
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "10% dos leads",
+                "20% dos leads",
+                "30% dos leads",
+                "50% dos leads"
+              ],
+              "en": [
+                "10% of leads",
+                "20% of leads",
+                "30% of leads",
+                "50% of leads"
+              ],
+              "es": [
+                "10% de los leads",
+                "20% de los leads",
+                "30% de los leads",
+                "50% de los leads"
+              ]
+            }
+          },
+          {
+            "nome": {
+              "pt": "Modelo",
+              "en": "Model",
+              "es": "Modelo"
+            },
+            "papel": "principal",
+            "pontos": [
+              [
+                "10% dos leads",
+                561.5
+              ],
+              [
+                "20% dos leads",
+                1012.0
+              ],
+              [
+                "30% dos leads",
+                1360.8
+              ],
+              [
+                "50% dos leads",
+                1954.4
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "10% dos leads",
+                "20% dos leads",
+                "30% dos leads",
+                "50% dos leads"
+              ],
+              "en": [
+                "10% of leads",
+                "20% of leads",
+                "30% of leads",
+                "50% of leads"
+              ],
+              "es": [
+                "10% de los leads",
+                "20% de los leads",
+                "30% de los leads",
+                "50% de los leads"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "tipo": "barras",
+        "titulo": {
+          "pt": "O score ordena, mas o volume erra: mesmo corrigido, o total fica 53% abaixo do real",
+          "en": "The score ranks, but volume misses: even corrected, the total is 53% below actual",
+          "es": "El score ordena, pero el volumen falla: aun corregido, queda 53% por debajo del real"
+        },
+        "leitura": {
+          "pt": "Erro do total previsto de conversões em cada bloco. Treinado em meses de conversão baixa, o modelo cru erra até 67%; deslocar as probabilidades para a taxa recente deixa 4 de 5 blocos com erro de até 10%, mas não o de 2009-06 a 2009-08.",
+          "en": "Error in the forecast total of conversions per block. Trained on low-conversion months, the raw model misses by up to 67%; shifting probabilities to the recent rate brings 4 of 5 blocks within 10%, but not 2009-06 to 2009-08.",
+          "es": "Error del total previsto de conversiones en cada bloque. Entrenado en meses de conversión baja, el modelo crudo falla hasta un 67%; desplazar las probabilidades a la tasa reciente deja 4 de 5 bloques con error de hasta 10%, pero no el de 2009-06 a 2009-08."
+        },
+        "eixo_x": {
+          "pt": "Bloco de teste",
+          "en": "Test block",
+          "es": "Bloque de prueba"
+        },
+        "eixo_y": {
+          "pt": "Erro do total previsto",
+          "en": "Error in the forecast total",
+          "es": "Error del total previsto"
+        },
+        "formato_x": "numero",
+        "formato_y": "percentual",
+        "series": [
+          {
+            "nome": {
+              "pt": "Modelo cru",
+              "en": "Raw model",
+              "es": "Modelo crudo"
+            },
+            "papel": "base",
+            "pontos": [
+              [
+                "2009-04 a 2009-05",
+                -0.4757
+              ],
+              [
+                "2009-06 a 2009-08",
+                -0.6693
+              ],
+              [
+                "2009-09 a 2009-12",
+                -0.5237
+              ],
+              [
+                "2010-03 a 2010-06",
+                -0.4217
+              ],
+              [
+                "2010-07 a 2010-11",
+                -0.0816
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "2009-04 a 2009-05",
+                "2009-06 a 2009-08",
+                "2009-09 a 2009-12",
+                "2010-03 a 2010-06",
+                "2010-07 a 2010-11"
+              ],
+              "en": [
+                "2009-04 to 2009-05",
+                "2009-06 to 2009-08",
+                "2009-09 to 2009-12",
+                "2010-03 to 2010-06",
+                "2010-07 to 2010-11"
+              ],
+              "es": [
+                "2009-04 a 2009-05",
+                "2009-06 a 2009-08",
+                "2009-09 a 2009-12",
+                "2010-03 a 2010-06",
+                "2010-07 a 2010-11"
+              ]
+            }
+          },
+          {
+            "nome": {
+              "pt": "Nível corrigido",
+              "en": "Level corrected",
+              "es": "Nivel corregido"
+            },
+            "papel": "principal",
+            "pontos": [
+              [
+                "2009-04 a 2009-05",
+                0.0958
+              ],
+              [
+                "2009-06 a 2009-08",
+                -0.531
+              ],
+              [
+                "2009-09 a 2009-12",
+                -0.0627
+              ],
+              [
+                "2010-03 a 2010-06",
+                -0.0675
+              ],
+              [
+                "2010-07 a 2010-11",
+                0.0011
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "2009-04 a 2009-05",
+                "2009-06 a 2009-08",
+                "2009-09 a 2009-12",
+                "2010-03 a 2010-06",
+                "2010-07 a 2010-11"
+              ],
+              "en": [
+                "2009-04 to 2009-05",
+                "2009-06 to 2009-08",
+                "2009-09 to 2009-12",
+                "2010-03 to 2010-06",
+                "2010-07 to 2010-11"
+              ],
+              "es": [
+                "2009-04 a 2009-05",
+                "2009-06 a 2009-08",
+                "2009-09 a 2009-12",
+                "2010-03 a 2010-06",
+                "2010-07 a 2010-11"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

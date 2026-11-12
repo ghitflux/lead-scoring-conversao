@@ -14,7 +14,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from lead_scoring import analise, graficos
+from lead_scoring import analise, graficos, site
 from lead_scoring.dados import ALVO, ARQUIVO_PADRAO, baixar, carregar
 
 SAIDA = Path("reports")
@@ -76,6 +76,9 @@ def main() -> None:
         "curva_de_ganho": json.loads(curva.reset_index().round(4).to_json(orient="records", force_ascii=False)),
         "grade_top10": json.loads(grade.head(10).to_json(orient="records", force_ascii=False)),
     }
+    # O texto e o gráfico principal do site vêm de outro arquivo; daqui saem só os gráficos extras, calculados a
+    # partir do próprio dicionário de resultados (passado por JSON para usar exatamente os números gravados).
+    resultados["para_o_site"] = {"graficos_extras": site.graficos_extras(json.loads(json.dumps(resultados, ensure_ascii=False)))}
     (SAIDA / "resultados.json").write_text(json.dumps(resultados, indent=2, ensure_ascii=False), encoding="utf-8")
 
     pd.set_option("display.width", 220)
